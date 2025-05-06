@@ -1,0 +1,23 @@
+[project]
+name = "langchain-playground"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "bs4>=0.0.2",
+    "chromadb>=1.0.8",
+    "duckduckgo-search>=8.0.1",
+    "faiss-cpu>=1.11.0",
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.23",
+    "langchain-experimental>=0.3.4",
+    "langchain-openai>=0.3.16",
+    "langchain-teddynote>=0.0.8",
+    "langgraph>=0.4.1",
+    "numexpr>=2.10.2",
+    "pydantic>=2.11.4",
+    "pypdf>=5.4.0",
+    "python-dotenv>=1.1.0",
+    "sentence-transformers>=4.1.0",
+]
