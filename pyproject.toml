@@ -9,7 +9,7 @@ dependencies = [
     "chromadb>=1.0.8",
     "duckduckgo-search>=8.0.1",
     "faiss-cpu>=1.11.0",
-    "langchain>=0.3.25",
+    "langchain[server]>=0.3.25",
     "langchain-community>=0.3.23",
     "langchain-experimental>=0.3.4",
     "langchain-openai>=0.3.16",
@@ -20,4 +20,6 @@ dependencies = [
     "pypdf>=5.4.0",
     "python-dotenv>=1.1.0",
     "sentence-transformers>=4.1.0",
+    "langserve>=0.3.1",
+    "sse-starlette>=2.3.4",
 ]

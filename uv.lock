@@ -955,11 +955,13 @@ dependencies = [
     { name = "langchain-openai" },
     { name = "langchain-teddynote" },
     { name = "langgraph" },
+    { name = "langserve" },
     { name = "numexpr" },
     { name = "pydantic" },
     { name = "pypdf" },
     { name = "python-dotenv" },
     { name = "sentence-transformers" },
+    { name = "sse-starlette" },
 ]
 
 [package.metadata]
@@ -968,17 +970,19 @@ requires-dist = [
     { name = "chromadb", specifier = ">=1.0.8" },
     { name = "duckduckgo-search", specifier = ">=8.0.1" },
     { name = "faiss-cpu", specifier = ">=1.11.0" },
-    { name = "langchain", specifier = ">=0.3.25" },
+    { name = "langchain", extras = ["server"], specifier = ">=0.3.25" },
     { name = "langchain-community", specifier = ">=0.3.23" },
     { name = "langchain-experimental", specifier = ">=0.3.4" },
     { name = "langchain-openai", specifier = ">=0.3.16" },
     { name = "langchain-teddynote", specifier = ">=0.0.8" },
     { name = "langgraph", specifier = ">=0.4.1" },
+    { name = "langserve", specifier = ">=0.3.1" },
     { name = "numexpr", specifier = ">=2.10.2" },
     { name = "pydantic", specifier = ">=2.11.4" },
     { name = "pypdf", specifier = ">=5.4.0" },
     { name = "python-dotenv", specifier = ">=1.1.0" },
     { name = "sentence-transformers", specifier = ">=4.1.0" },
+    { name = "sse-starlette", specifier = ">=2.3.4" },
 ]
 
 [[package]]
@@ -1061,6 +1065,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/97/7a/5fede018d8b9100db14211cfdb94aefd0e5f2e9ae738072f3d4cc443465b/langgraph_sdk-0.1.66.tar.gz", hash = "sha256:81474ad4555a06004cc7a2f4ab477135d5eaf7db11fbcf2a69257fb2d717582e", size = 44049 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/97/06/87ce0b8043ba5a4ec8369a243f3140f8fd9d9b7aab1d8a9351711739beea/langgraph_sdk-0.1.66-py3-none-any.whl", hash = "sha256:f781c63f3e913d3d6bedb02cb84d775cda64e3cdf3282fd387bdd8faaf53c603", size = 47584 },
+]
+
+[[package]]
+name = "langserve"
+version = "0.3.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpx" },
+    { name = "langchain-core" },
+    { name = "orjson" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8c/4f/465c21b7ab4ab18d9bf59f2804f7dc599a52462beb53ba84180f7d2bf581/langserve-0.3.1.tar.gz", hash = "sha256:17bf7f7d7c182623298748c2eab176c4c0e1872e20f88be89ba89a962c94988d", size = 1141070 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/89/e4/6a26851d96c445d783d188c330cb871b56f03b18824ad8fadf6452d18a88/langserve-0.3.1-py3-none-any.whl", hash = "sha256:c860435ebbcc2c051c3e34c349c9d6020921a8af9216ad17700b58dbd01be9a2", size = 1173074 },
 ]
 
 [[package]]
@@ -2272,6 +2291,19 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/33/ac/e5e0a807163652a35be878c0ad5cfd8b1d29605edcadfb5df3c512cdf9f3/sqlalchemy-2.0.40-cp313-cp313-win32.whl", hash = "sha256:a669cbe5be3c63f75bcbee0b266779706f1a54bcb1000f302685b87d1b8c1500", size = 2080704 },
     { url = "https://files.pythonhosted.org/packages/1c/cb/f38c61f7f2fd4d10494c1c135ff6a6ddb63508d0b47bccccd93670637309/sqlalchemy-2.0.40-cp313-cp313-win_amd64.whl", hash = "sha256:641ee2e0834812d657862f3a7de95e0048bdcb6c55496f39c6fa3d435f6ac6ad", size = 2104564 },
     { url = "https://files.pythonhosted.org/packages/d1/7c/5fc8e802e7506fe8b55a03a2e1dab156eae205c91bee46305755e086d2e2/sqlalchemy-2.0.40-py3-none-any.whl", hash = "sha256:32587e2e1e359276957e6fe5dad089758bc042a971a8a09ae8ecf7a8fe23d07a", size = 1903894 },
+]
+
+[[package]]
+name = "sse-starlette"
+version = "2.3.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "starlette" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/43/be/7e776a29b5f712b5bd13c571256a2470fcf345c562c7b2359f2ee15d9355/sse_starlette-2.3.4.tar.gz", hash = "sha256:0ffd6bed217cdbb74a84816437c609278003998b4991cd2e6872d0b35130e4d5", size = 17522 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/43/a4/ee4a20f0b5ff34c391f3685eff7cdba1178a487766e31b04efb51bbddd87/sse_starlette-2.3.4-py3-none-any.whl", hash = "sha256:b8100694f3f892b133d0f7483acb7aacfcf6ed60f863b31947664b6dc74e529f", size = 10232 },
 ]
 
 [[package]]
