@@ -11,3 +11,5 @@ wheels/
 
 chroma_db/
 chroma_db_example/
+chroma_db_hyde_embedder_example/
+chroma_db_parent_retriever/
